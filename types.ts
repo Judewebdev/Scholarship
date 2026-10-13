@@ -1,0 +1,40 @@
+export type ApplicantProfile = {
+  fullName: string;
+  nationality: string;
+  residenceCountry: string;
+  degreeTitle: string;
+  university: string;
+  graduationYear: string;
+  grade: string;
+  gradingScale: string;
+  preferredFields: string[];
+  preferredCountries: string[];
+  languages: string[];
+  englishTest: string;
+  experience: string;
+  achievements: string;
+  fundingNeeds: string[];
+  careerGoal: string;
+};
+
+export type Opportunity = {
+  id?: string;
+  title: string;
+  institution: string;
+  country: string;
+  degreeLevel: string;
+  subjectFit: string;
+  fundingCoverage: string[];
+  eligibilitySummary: string;
+  matchScore: number;
+  deadline: string;
+  status: 'discovered' | 'review' | 'preparing' | 'ready_for_approval' | 'submitted' | 'rejected' | 'result_received';
+  officialUrl: string;
+  applicationUrl: string;
+  applicationFee: string;
+  languageRequirements: string;
+  documentsRequired: string[];
+  nextAction: string;
+  verificationNotes: string;
+  sourceCheckedAt: string;
+};
